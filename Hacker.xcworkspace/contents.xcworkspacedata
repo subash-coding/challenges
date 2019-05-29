@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Workspace
+   version = "1.0">
+   <FileRef
+      location = "group:MoreExceptions/MoreExceptions.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:StringToInteger/StringToInteger.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:LinkedList/LinkedList.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "container:/Users/subash/Desktop/HackerRank/HackerRank/Difference.xcodeproj">
+   </FileRef>
+</Workspace>
