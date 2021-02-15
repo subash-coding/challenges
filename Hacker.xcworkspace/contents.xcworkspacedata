@@ -10,7 +10,4 @@
    <FileRef
       location = "group:LinkedList/LinkedList.xcodeproj">
    </FileRef>
-   <FileRef
-      location = "container:/Users/subash/Desktop/HackerRank/HackerRank/Difference.xcodeproj">
-   </FileRef>
 </Workspace>
