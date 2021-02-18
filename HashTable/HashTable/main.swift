@@ -7,7 +7,7 @@
 
 import Foundation
 
-public struct HashTable<Key: Hashable, Value> {
+public struct MyHashTable<Key: Hashable, Value> {
     private typealias Element = (key: Key, value: Value)
     private typealias Bucket = [Element]
     private var buckets: [Bucket]
@@ -55,3 +55,16 @@ public struct HashTable<Key: Hashable, Value> {
     
 }
 
+var hashTable = MyHashTable<String,String>(capacity: 5)
+hashTable["firstname"] = "Subash"
+
+if let firstname = hashTable["firstname"] {
+    print(firstname)
+}
+
+
+if let lastname = hashTable["lastname"] {
+    print(lastname)
+} else  {
+    print("lastname key not in hash table")
+}
