@@ -22,3 +22,10 @@ if let lastname = hashTable["lastname"] {
 } else  {
     print("lastname key not in hash table")
 }
+
+
+//#########
+
+var numIdentPairs = NumberOfIdenticalPairs()
+print("Identical Count: \(numIdentPairs.numIdenticalPairs([1,2,3,1,1,3]))")
+print("Identical Count: \(numIdentPairs.numIdenticalPairs([1,1,1,1]))")
