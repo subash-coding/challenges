@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		BB07DFBC25DCE394005F66F9 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB07DFBB25DCE394005F66F9 /* main.swift */; };
+		BB07DFC425DE4F52005F66F9 /* MyHashTable.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB07DFC325DE4F52005F66F9 /* MyHashTable.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -25,6 +26,7 @@
 /* Begin PBXFileReference section */
 		BB07DFB825DCE394005F66F9 /* HashTable */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = HashTable; sourceTree = BUILT_PRODUCTS_DIR; };
 		BB07DFBB25DCE394005F66F9 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
+		BB07DFC325DE4F52005F66F9 /* MyHashTable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyHashTable.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +60,7 @@
 			isa = PBXGroup;
 			children = (
 				BB07DFBB25DCE394005F66F9 /* main.swift */,
+				BB07DFC325DE4F52005F66F9 /* MyHashTable.swift */,
 			);
 			path = HashTable;
 			sourceTree = "<group>";
@@ -119,6 +122,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BB07DFC425DE4F52005F66F9 /* MyHashTable.swift in Sources */,
 				BB07DFBC25DCE394005F66F9 /* main.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
