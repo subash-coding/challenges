@@ -22,3 +22,15 @@ class NumberOfIdenticalPairs {
     }
 
 }
+
+class NumJewelsInStones {
+    func numJewelsInStones(_ jewels: String, _ stones: String) -> Int {
+        var count = 0
+        for stone in stones {
+            if jewels.contains(stone) {
+                count += 1
+            }
+        }
+        return count
+    }
+}

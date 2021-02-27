@@ -29,3 +29,10 @@ if let lastname = hashTable["lastname"] {
 var numIdentPairs = NumberOfIdenticalPairs()
 print("Identical Count: \(numIdentPairs.numIdenticalPairs([1,2,3,1,1,3]))")
 print("Identical Count: \(numIdentPairs.numIdenticalPairs([1,1,1,1]))")
+print("\n")
+
+
+//######### NumJewelsInStones ##########
+let numberOfJewels = NumJewelsInStones().numJewelsInStones("aA", "aAAbbbb")
+print("Number of Jewels \(numberOfJewels)")
+print("\n")
