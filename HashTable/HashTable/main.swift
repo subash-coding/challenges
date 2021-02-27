@@ -36,3 +36,5 @@ print("\n")
 let numberOfJewels = NumJewelsInStones().numJewelsInStones("aA", "aAAbbbb")
 print("Number of Jewels \(numberOfJewels)")
 print("\n")
+
+SpNumber().a()

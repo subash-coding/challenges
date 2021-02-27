@@ -34,3 +34,30 @@ class NumJewelsInStones {
         return count
     }
 }
+
+class SmallerNumbersThanCurrent {
+    func smallerNumbersThanCurrent(_ nums: [Int]) -> [Int] {
+        return []
+    }
+}
+
+
+class SpNumber {
+    func a() {
+        let pills = [8,1,2,2,3]
+        var dictionary = [Int:Int]()
+        for i in 0...(pills.count-1) {
+            dictionary[i] = 0
+        }
+        for i in 0...(pills.count-2) {
+            for j in (i+1...(pills.count-1)) {
+                if pills[i] > pills[j] {
+                    dictionary[i] = dictionary[i]!+1
+                } else {
+                    dictionary[j] = dictionary[j]!+1
+                }
+            }
+        }
+        print(Array(dictionary.values))
+    }
+}
