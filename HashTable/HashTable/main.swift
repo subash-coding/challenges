@@ -37,4 +37,6 @@ let numberOfJewels = NumJewelsInStones().numJewelsInStones("aA", "aAAbbbb")
 print("Number of Jewels \(numberOfJewels)")
 print("\n")
 
-SpNumber().a()
+print(SpNumber().smallerNumbersThanCurrent([8,1,2,2,3]))
+
+print(AnagramMappings().anagramMappings([12, 28, 46, 32, 50], [50, 12, 32, 46, 28]))

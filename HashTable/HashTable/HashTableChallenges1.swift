@@ -43,21 +43,59 @@ class SmallerNumbersThanCurrent {
 
 
 class SpNumber {
-    func a() {
-        let pills = [8,1,2,2,3]
+    
+    func smallerNumbersThanCurrent1(_ nums: [Int]) -> [Int] {
         var dictionary = [Int:Int]()
-        for i in 0...(pills.count-1) {
+        for i in 0...(nums.count-1) {
             dictionary[i] = 0
         }
-        for i in 0...(pills.count-2) {
-            for j in (i+1...(pills.count-1)) {
-                if pills[i] > pills[j] {
+        for i in 0...(nums.count-2) {
+            for j in (i+1...(nums.count-1)) {
+                if nums[i] > nums[j] {
                     dictionary[i] = dictionary[i]!+1
-                } else {
+                } else if nums[i] < nums[j]  {
                     dictionary[j] = dictionary[j]!+1
                 }
             }
         }
-        print(Array(dictionary.values))
+        var finalArray = [Int]()
+        for i in 0...(nums.count-1) {
+            finalArray.append(dictionary[i]!)
+        }
+       return finalArray
+       }
+    
+    func smallerNumbersThanCurrent(_ nums: [Int]) -> [Int] {
+        var arr = [Int]()
+        for m in nums {
+            var count = 0
+            for n in nums {
+                if m > n {
+                    count += 1
+                }
+            }
+            arr.append(count)
+        }
+        return arr
+    }
+    
+    func smallerNumbersThanCurrent3(_ nums: [Int]) -> [Int] {
+        var result = [Int]()
+        for m in nums {
+            let smallerNumbs = nums.filter { $0 < m}.count
+            result.append(smallerNumbs)
+        }
+        return result
+    }
+}
+
+
+class AnagramMappings {
+    func anagramMappings(_ A: [Int], _ B: [Int]) -> [Int] {
+        var result = [Int]()
+        for m in A {
+            result.append(B.firstIndex(of: m)!)
+        }
+        return result
     }
 }
